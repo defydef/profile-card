@@ -43,31 +43,23 @@ function Intro() {
 function SkillList() {
   return (
     <ul className="skill-list">
-      <li>
-        <Skill name="HTML + CSS" bgColor="lightblue" emoji="&#128170;" />
-      </li>
-      <li>
-        <Skill name="Javascript" bgColor="yellow" emoji="&#127829;" />
-      </li>
-      <li>
-        <Skill name="Web Design" bgColor="red" emoji="&#127828;" />
-      </li>
-      <li>
-        <Skill name="Git and Github" bgColor="pink" emoji="&#127871;" />
-      </li>
-      <li>
-        <Skill name="React" bgColor="orange" emoji="&#127841;" />
-      </li>
+      <Skill name="HTML + CSS" bgColor="lightblue" emoji="&#128170;" />
+      <Skill name="Javascript" bgColor="yellow" emoji="&#127829;" />
+      <Skill name="Web Design" bgColor="red" emoji="&#127828;" />
+      <Skill name="Git and Github" bgColor="pink" emoji="&#127871;" />
+      <Skill name="React" bgColor="orange" emoji="&#127841;" />
     </ul>
   );
 }
 
 function Skill(props) {
   return (
-    <p className="skill" style={{ backgroundColor: props.bgColor }}>
-      {props.name}
-      <span> {props.emoji}</span>
-    </p>
+    <li>
+      <p className="skill" style={{ backgroundColor: props.bgColor }}>
+        {props.name}
+        <span> {props.emoji}</span>
+      </p>
+    </li>
   );
 }
 
